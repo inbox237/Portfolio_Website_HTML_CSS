@@ -1,0 +1,1200 @@
+/*@@@ BEGINNING - MOBILE FIRST ---------------->VV*/
+
+/*SITE-WIDE - FORMATTING*/
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+p {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h2 {
+    display: block;
+    font-size: 2.2em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#title_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 98;
+    width: 100%;
+}
+
+#title_text h2{
+    text-align: center;
+    margin-block-start: 0em;
+    margin-block-end: 0.0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+
+#title_text h3{
+    display: block;
+    font-size: 1.15em;
+    margin-block-start: 1.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;}
+
+h3 {
+    display: block;
+    font-size: 1.15em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(51, 163, 255)
+}
+
+a:active {
+    color: rgb(51, 163, 255)
+}
+
+/*SPECIFIC SECTION FORMATTING*/
+
+#cv{
+
+    filter: grayscale(100%);
+}
+
+/*SITE-WIDE - OTHER GENERAL FORMATTING*/
+
+.span{
+    width:100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+/*SITE-WIDE - TOP HEADER, NAVBAR & BANNER*/
+
+#header_block {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 200px;
+    background-color: #fff;
+}
+
+#name {
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.0rem;
+    font-weight: 400;
+    line-height: .5;
+    display: block;
+    margin-left: 0px;
+}
+
+#navbar {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-transform: none;
+    margin: 0;
+    padding: 0px;
+    margin-right: 0px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 100%;
+   
+}
+
+.navbarline {
+    display: block;
+    padding: 2px;
+    margin: 2px;
+    border: 0.5px solid black;
+    text-align: center;
+}
+
+.navbarline a {
+    text-decoration: none;
+}
+
+#header_image_div {
+    background-image: url("../docs/thin_bw.jpg");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header_image_div img {
+    max-width: 100%;
+    display: block;
+}
+
+#footer_div { /*No footer div image, but may implement later VV*/
+    opacity: .3;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*PAGE-SPECIFIC - MOBILE FIRST - HOME*/
+
+#floating {
+    height: 475px;
+    width: 280px;
+    z-index: 99;
+    background-color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -0px);
+    padding: 40px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    -moz-box-shadow: 0 0 1px 1px #666;
+    -webkit-box-shadow: 0 0 1px 1px #666;
+    box-shadow: 0 0 1px 1px #666;
+}
+
+#profile_image {
+    background-image: url("../docs/profile.jpg");
+    z-index: 98;
+    width: 280px;
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#profile_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 98;
+    width: 280px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#social_bar {
+    z-index: 98;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    padding: 0px;
+
+}
+
+#social_bar img {
+    text-align: center;
+    width: 30%;
+
+}
+
+#footer_div_home { /*No footer div image, but may implement later VV*/
+    opacity: .3;
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*PAGE-SPECIFIC - MOBILE FIRST - PROFESSIONAL EXPERIENCE*/
+
+#floating_cv {
+    height: 740px;
+    width: 320px;
+    z-index: 99;
+    background-color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -0px);
+    padding: 20px;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    -moz-box-shadow: 0 0 1px 1px #666;
+    -webkit-box-shadow: 0 0 1px 1px #666;
+    box-shadow: 0 0 1px 1px #666;
+
+}
+
+#floating_cv #social_bar {
+    z-index: 98;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    padding: 0px;
+
+}
+
+#floating_cv #social_bar img {
+    text-align: center;
+    width: 20%;
+    margin-bottom: 0px;
+
+}
+
+
+#cv_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 98;
+    width: 300px;
+    height: 640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cv_text h3{
+    display: block;
+    font-size: 1.15em;
+    margin-block-start: 1.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#cv_text h2{
+    text-align: center;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+            
+}
+        
+
+/*PAGE-SPECIFIC - MOBILE FIRST - INTERESTS*/
+
+#floating_interests{
+    height: 1010px;
+    width: 280px;
+    z-index: 99;
+    background-color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -0px);
+    padding: 40px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    -moz-box-shadow: 0 0 1px 1px #666;
+    -webkit-box-shadow: 0 0 1px 1px #666;
+    box-shadow: 0 0 1px 1px #666;
+}
+
+#interests_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    z-index: 98;
+    width: 280px;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#interests_image_1 {
+    background-image: url("../docs/diving.jpg");
+    z-index: 98;
+    width: 280px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#interests_image_2 {
+    background-image: url("../docs/fishing.jpg");
+    z-index: 98;
+    width: 280px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#interests_image_3 {
+    background-image: url("../docs/succulents.jpg");
+    z-index: 98;
+    width: 280px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#interests_image_4 {
+    background-image: url("../docs/travel.jpg");
+    z-index: 98;
+    width: 280px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#footer_div_interests { /*No footer div image, but may implement later VV*/
+    opacity: .3;
+    width: 100%;
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*PAGE-SPECIFIC - MOBILE FIRST - BLOG*/
+
+#floating_blog{
+    height: 2300px;
+    width: 280px;
+    z-index: 99;
+    background-color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -0px);
+    padding: 40px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    -moz-box-shadow: 0 0 1px 1px #666;
+    -webkit-box-shadow: 0 0 1px 1px #666;
+    box-shadow: 0 0 1px 1px #666;
+}
+
+#blog_text {
+    z-index: 98;
+    width: 400px;
+    height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#blog_text h3 {
+    font-style:italic ;
+    margin-block-start: 0.9em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+
+#blog_image_1 {
+    background-image: url("../docs/pumpkin.jpg");
+    z-index: 98;
+    width: 175px;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#blog_image_2 {
+    background-image: url("../docs/country.jpg");
+    z-index: 98;
+    width: 175px;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#blog_image_3 {
+    background-image: url("../docs/carol.jpeg");
+    z-index: 98;
+    width: 175px;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#blog_image_4 {
+    background-image: url("../docs/hat.webp");
+    z-index: 98;
+    width: 175px;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#blog_image_5 {
+    background-image: url("../docs/kahoot.png");
+    z-index: 98;
+    width: 175px;
+    height: 175px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#footer_div_blog { /*No footer div image, but may implement later VV*/
+    opacity: .3;
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TABLET 600+*/
+@media only screen and (min-width: 600px) {
+
+    /*SITE-WIDE - 600+ - TOP HEADER, NAVBAR & BANNER*/
+
+    #header_block {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: #fff;
+    }
+
+    #navdiv {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+
+    #name {
+        color: #000;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.2;
+        display: inline;
+        margin-left: 50px;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        list-style-type: none;
+        text-transform: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+        background-color: #fff;
+        color: #000;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: .9rem;
+        font-weight: 500;
+        line-height: 1.2;
+
+        
+    }
+
+    .navbarline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        width: 30%;
+        height: 30px;
+        
+    }
+
+        #footer_div { /*No footer div image, but may implement later VV*/
+        opacity: .3;
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+    /*PAGE-SPECIFIC - 600+ - HOME*/
+
+    #floating {
+        height: 300px;
+        width: 500px;
+        z-index: 99;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -0px);
+        padding: 30px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        -moz-box-shadow: 0 0 1px 1px #666;
+        -webkit-box-shadow: 0 0 1px 1px #666;
+        box-shadow: 0 0 1px 1px #666;
+    }
+
+    #profile_image {
+        background-image: url("../docs/profile.jpg");
+        z-index: 98;
+        width: 200px;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #profile_text {
+        z-index: 98;
+        width: 250px;
+        height: 250px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #social_bar {
+        z-index: 98;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: normal;
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+
+    }
+
+    /*PAGE-SPECIFIC - 600+ - PROFESSIONAL EXPERIENCE*/
+
+    #floating_cv {
+        height: 700px;
+        width: 500px;
+        z-index: 99;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -0px);
+        padding: 30px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        -moz-box-shadow: 0 0 1px 1px #666;
+        -webkit-box-shadow: 0 0 1px 1px #666;
+        box-shadow: 0 0 1px 1px #666;
+    }
+
+    #cv_text {
+        z-index: 98;
+        width: 500px;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /*PAGE-SPECIFIC - 600+ - INTERESTS*/
+
+    #floating_interests{
+        height: 1421px;
+        width: 500px;
+        z-index: 99;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -0px);
+        padding: 30px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        -moz-box-shadow: 0 0 1px 1px #666;
+        -webkit-box-shadow: 0 0 1px 1px #666;
+        box-shadow: 0 0 1px 1px #666;
+    }
+
+    #interests_text {
+        z-index: 98;
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #interests_image_1 {
+        background-image: url("../docs/diving.jpg");
+        z-index: 98;
+        width: 500px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #interests_image_2 {
+        background-image: url("../docs/fishing.jpg");
+        z-index: 98;
+        width: 500px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #interests_image_3 {
+        background-image: url("../docs/succulents.jpg");
+        z-index: 98;
+        width: 500px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #interests_image_4 {
+        background-image: url("../docs/travel.jpg");
+        z-index: 98;
+        width: 500px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+
+    /*PAGE-SPECIFIC - 600+ - BLOG*/
+
+    #floating_blog{
+        height: 1740px;
+        width: 500px;
+        z-index: 99;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -0px);
+        padding: 20px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        -moz-box-shadow: 0 0 1px 1px #666;
+        -webkit-box-shadow: 0 0 1px 1px #666;
+        box-shadow: 0 0 1px 1px #666;
+    }
+    
+    #blog_text {
+        z-index: 98;
+        width: 400px;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    #blog_text h3 {
+    font-style:italic ;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+    }
+    
+    #blog_image_1 {
+        background-image: url("../docs/pumpkin.jpg");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    #blog_image_2 {
+        background-image: url("../docs/country.jpg");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    #blog_image_3 {
+        background-image: url("../docs/carol.jpeg");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    #blog_image_4 {
+        background-image: url("../docs/hat.webp");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    #blog_image_5 {
+        background-image: url("../docs/kahoot.png");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/* DESKTOP 850+*/
+
+@media only screen and (min-width: 850px) {
+
+    /*SITE-WIDE - 850+ - TOP HEADER, NAVBAR & BANNER*/
+
+    #header_block {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background-color: #fff;
+    }
+
+    #name {
+        color: #000;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.2;
+        display: inline;
+        margin-left: 50px;
+    }
+
+    #navdiv {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style-type: none;
+        text-transform: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 20px;
+        background-color: #fff;
+        color: #000;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    .navbarline {
+        display: inline;
+        padding: 15px;
+        width: unset;
+        height: unset;
+
+    }
+
+    #footer_div {/*No footer div image, but may implement later VV*/
+
+        opacity: .3;
+        width: 100%;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /*PAGE-SPECIFIC - 850+ - HOME*/
+
+    #floating {
+        height: 400px;
+        width: 700px;
+        z-index: 99;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -0px);
+        padding: 30px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        -moz-box-shadow: 0 0 1px 1px #666;
+        -webkit-box-shadow: 0 0 1px 1px #666;
+        box-shadow: 0 0 1px 1px #666;
+    }
+
+    #profile_image {
+        background-image: url("../docs/profile.jpg");
+        z-index: 98;
+        width: 300px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #profile_text {
+        z-index: 98;
+        width: 300px;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #social_bar {
+        z-index: 98;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: normal;
+        width: 100%;
+        height: 50px;
+        padding: 0px;
+
+    }
+
+    #social_bar img {
+        text-align: center;
+        width: 30%;
+
+    }
+
+
+    /*PAGE-SPECIFIC - 850+ - PROFESSIONAL EXPERIENCE*/    
+    
+    #floating_cv {
+        height: 700px;
+        width: 700px;
+        z-index: 99;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -0px);
+        padding: 30px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        -moz-box-shadow: 0 0 1px 1px #666;
+        -webkit-box-shadow: 0 0 1px 1px #666;
+        box-shadow: 0 0 1px 1px #666;
+    }
+
+    #cv_text {
+        z-index: 98;
+        width: 700px;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /*PAGE-SPECIFIC - 850+ - INTERESTS*/ 
+
+    #floating_interests{
+        height: 1820px;
+        width: 700px;
+        z-index: 99;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -0px);
+        padding: 30px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        -moz-box-shadow: 0 0 1px 1px #666;
+        -webkit-box-shadow: 0 0 1px 1px #666;
+        box-shadow: 0 0 1px 1px #666;
+    }
+    
+    #interests_text {
+        z-index: 98;
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #interests_image_1 {
+        background-image: url("../docs/diving.jpg");
+        z-index: 98;
+        width: 700px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #interests_image_2 {
+        background-image: url("../docs/fishing.jpg");
+        z-index: 98;
+        width: 700px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #interests_image_3 {
+        background-image: url("../docs/succulents.jpg");
+        z-index: 98;
+        width: 700px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #interests_image_4 {
+        background-image: url("../docs/travel.jpg");
+        z-index: 98;
+        width: 700px;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+
+    /*PAGE-SPECIFIC - 850+ - BLOG*/ 
+
+    #floating_blog{
+        height: 1080px;
+        width: 700px;
+        z-index: 99;
+        background-color: #fff;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -0px);
+        padding: 30px;
+        margin: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        -moz-box-shadow: 0 0 1px 1px #666;
+        -webkit-box-shadow: 0 0 1px 1px #666;
+        box-shadow: 0 0 1px 1px #666;
+    }
+
+    #blog_text {
+        z-index: 98;
+        width: 400px;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    #blog_text h3 {
+        font-style:italic ;
+        margin-block-start: 0.9em;
+        margin-block-end: 0.2em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+
+    }
+
+    #blog_image_1 {
+        background-image: url("../docs/pumpkin.jpg");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #blog_image_2 {
+        background-image: url("../docs/country.jpg");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #blog_image_3 {
+        background-image: url("../docs/carol.jpeg");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #blog_image_4 {
+        background-image: url("../docs/hat.webp");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    #blog_image_5 {
+        background-image: url("../docs/kahoot.png");
+        z-index: 98;
+        width: 175px;
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    
+}
+    /*END*/ 
